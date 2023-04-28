@@ -1,4 +1,5 @@
 from lista import Lista
+from matriz import Matriz
 class Main:
   
 
@@ -10,7 +11,7 @@ class Main:
           arestas = (int(v1))
           vertices = (int(a1))
           Lista.lista_adjacencias(vertices,arestas)
-        
+          Matriz.matriz_adjacencias(vertices,arestas)
        if l.startswith('e'):
           descarte, origem,destino,peso = l.split()
           int(origem)
