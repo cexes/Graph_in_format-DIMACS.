@@ -10,7 +10,7 @@ class Main:
           _, v1,a1 = l.split()
           arestas = (int(v1))
           vertices = (int(a1))
-          Lista.lista_adjacencias(vertices,arestas)
+          Lista(vertices)
           Matriz.matriz_adjacencias(vertices,arestas)
        if l.startswith('e'):
           descarte, origem,destino,peso = l.split()

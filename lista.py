@@ -1,3 +1,11 @@
 class Lista:
-    def lista_adjacencias(vertices,arestas):
-     print(vertices,arestas)
+  def __init__(self,vertices):
+     self.vertices = vertices
+     print(self.vertices)
+     self.grafo = [[] for i in range(self.vertices)]
+    
+    
+
+    
+       
+
