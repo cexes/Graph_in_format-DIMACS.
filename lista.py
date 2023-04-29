@@ -14,3 +14,8 @@ class Lista:
         for j in self.grafo[i]:
            print(f'{j}: ->',end=' ')
         print("")
+         
+  def calc_grau(self,v):
+     v-=1
+     grau = len(self.grafo[v])
+     print("O grau do vértice:",v+1, "é",grau)
