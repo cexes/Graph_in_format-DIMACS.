@@ -26,7 +26,3 @@ class ListAdj:
     print("LISTA É BIPARTIDO: ",Bip.is_bipartite(self.grafo),"\n")   
     print("LISTA É CONEXO :", Bip.is_connected(self.grafo),"\n")   
     
-g  = ListAdj(3)
-
-g.add_edges(1,1,1)
-g.bipartite_connected()
