@@ -1,5 +1,5 @@
-from lista import Lista
-from matriz import Matriz
+from lista import ListAdj
+from matriz import MatrizAdj
 
 class Main:
 
@@ -9,24 +9,27 @@ class Main:
        if l.startswith('p'):
           _, v1,a1 = l.split()
           vertices = (int(a1))   
-          list = Lista(vertices) 
-          m = Matriz(vertices)
+          list = ListAdj(vertices) 
+          m = MatrizAdj(vertices)
        if l.startswith('e'):
-          descarte, origem,destino,peso = l.split()
+          descarte, origem,destiny,weight = l.split()
           o = int(origem)
-          d =int(destino)
-          p =int(peso)
-          list.adiconar_arestas(o,d,p)
-          m.adiciar_arestas(o,d,p)
+          d =int(destiny)
+          p =int(weight)
+          list.add_edges(o,d,p)
+          m.add_edge(o,d,p)
           
-      list.mostrar_lista()
+      list.show_list()
       list.calc_grau(vertices)
-      m.mostrar_matriz()
+      #list.bipartite_connected()
+      m.show_matriz()
       m.calc_grau(vertices)
+      m.bipartite_connected()
+      
    pass
     
          
    ReadFile("arquivo.txt")
-            
-       
+   
+
           
